@@ -6,4 +6,62 @@
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: 400;
+    color: white;
+}
+.bg-container{
+    background-color: rgb(0, 0, 0);
+}
+
+/* navbar related style */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title{
+    margin-left: 100px;
+    font-size: 36px;
+    font-weight: 800;
+    font-style: italic;
+    color: rgb(230, 83, 60);
+}
+.navbar-list{
+    display: flex;
+    list-style: none;
+    margin-right: 70px;
+}
+nav ul li{
+    margin-right: 30px;
+}
+
+/* banner section start */
+
+.banner{
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+}
+.banner-hading{
+    font-size: 78px;
+    font-weight: 900;
+}
+.banner-description{
+    font-size: 16px;
+    font-weight: 400;
+}
+.btn-join, .btn-app{
+    width: 224px;
+    height: 54px;
+    border-radius: 42px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+.btn-join{
+    background-color: rgb(230, 83, 60);
+}
+.btn-app{
+    background-color:rgb(0, 0, 0);
+    border: 1px solid white;
 }

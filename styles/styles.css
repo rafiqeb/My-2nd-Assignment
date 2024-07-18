@@ -7,8 +7,6 @@
     font-style: normal;
     font-weight: 400;
     color: white;
-}
-.bg-container{
     background-color: rgb(0, 0, 0);
 }
 
@@ -64,4 +62,58 @@ nav ul li{
 .btn-app{
     background-color:rgb(0, 0, 0);
     border: 1px solid white;
+}
+
+/* habits section start */
+
+.habit{
+    margin-top: 100px;
+}
+.habit-content{
+    text-align: center;
+}
+.habit-title, 
+.run-title{
+    font-size: 40px;
+    font-weight: 800;
+}
+.habit-description, 
+.card-title p, 
+.run-content p{
+    font-size: 14px;
+}
+.habit-card{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 58px;
+}
+.card-title{
+    text-align: center;
+}
+.card-title img{
+    border-radius: 50%;
+}
+.card-title h5{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Run section start */
+
+.run{
+    display: flex;
+    justify-content: center;
+    gap: 160px;
+    margin-top: 100px;
+    background-color: rgb(34, 34, 34);
+}
+.run-content{
+    text-align: center;
+    margin-top: 20px;
+}
+.run-img img{
+    width: 366px;
+    height: 312px;
+    border-radius: 18px;
 }

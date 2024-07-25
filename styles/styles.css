@@ -26,11 +26,23 @@
 }
 .navbar-list{
     display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     margin-right: 70px;
 }
 nav ul li{
     margin-right: 30px;
+}
+.link{
+    width: 60px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px 8px 20px;
+    border-radius: 40px;
+    background-color: rgb(230, 83, 60);
 }
 
 /* banner section start */
@@ -38,7 +50,7 @@ nav ul li{
 .banner{
     display: flex;
     justify-content: center;
-    gap: 300px;
+    gap: 160px;
 }
 .banner-hading{
     font-size: 78px;
@@ -63,6 +75,36 @@ nav ul li{
     background-color:rgb(0, 0, 0);
     border: 1px solid white;
 }
+.banner-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-img{
+    width: 350px;
+    height: 580px;
+    /* margin-right: 50px; */
+    background-image: url(../images/Images\ 2.png);
+    background-repeat: no-repeat;
+    border: 1px solid greenyellow;
+}
+.box1, 
+.box2{
+    border: 1px solid red;
+    width: 180px;
+    height: 96px;
+    border-radius: 12px;
+    background: rgba(48, 48, 48, 0.54);
+    backdrop-filter: blur(2px);
+}
+.box1{
+    margin-right: -90px;
+    margin-bottom: -350px;
+}
+.box2{
+    margin-left: -120px;
+    margin-top: -200px;
+}
 
 /* habits section start */
 
@@ -79,7 +121,8 @@ nav ul li{
 }
 .habit-description, 
 .card-title p, 
-.run-content p{
+.run-content p, 
+.box p{
     font-size: 14px;
 }
 .habit-card{
@@ -104,6 +147,11 @@ nav ul li{
 .run{
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 1060px;
+    height: 370px;
+    border-radius: 18px;
+    margin-left: 120px;
     gap: 160px;
     margin-top: 100px;
     background-color: rgb(34, 34, 34);

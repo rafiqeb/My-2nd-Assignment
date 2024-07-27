@@ -69,15 +69,18 @@ nav ul li{
     font-size: 16px;
     font-weight: 400;
 }
-.btn-join, .btn-app{
-    width: 224px;
+.btn-join, 
+.btn-app, 
+.btn-bmi{
+    width: 200px;
     height: 54px;
     border-radius: 42px;
     font-size: 18px;
     font-weight: 600;
     color: white;
+    border: none;
 }
-.btn-join{
+.btn-join, .btn-bmi{
     background-color: rgb(230, 83, 60);
 }
 .btn-app{
@@ -146,7 +149,9 @@ nav ul li{
 .habit-description, 
 .card-title p, 
 .run-content p, 
-.box p{
+.box p, 
+.bmi-form p, 
+td{
     font-size: 14px;
 }
 .habit-card{
@@ -190,6 +195,63 @@ nav ul li{
     border-radius: 18px;
 }
 
+/* BMI section start */
+
+.bmi{
+    width: 1440px;
+    height: 450px;
+    margin-top: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    gap: 150px;
+    background-color: rgb(34, 34, 34);
+}
+.bmi-chart h3, 
+.bmi-form h3{
+    font-size: 30px;
+    font-weight: 900;
+}
+.form4{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 30px;
+}
+.form4 input{
+    width: 180px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px 16px 8px 16px;
+    border: none;
+    
+}
+#form5{
+    width: 400px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px 16px 8px 16px;
+    border: none;
+}
+.btn-bmi{
+    margin-top: 10px;
+}
+table{
+    border-collapse: collapse;
+    width: 310px;
+    height: 216px;
+    text-align: center;
+}
+td, th{
+    border: 1px solid white;
+    padding: 5px;
+
+}
+
 /* media quary for mobile */
 
 @media screen and (max-width: 576px) {
@@ -206,5 +268,12 @@ nav ul li{
         width: 420px;
         height: 700px;
         gap: 50px;
+    }
+    .bmi{
+        width: 450px;
+        height: 800px;
+        flex-direction: column;
+        gap: 50px;
+        margin-left: 15px;
     }
 }

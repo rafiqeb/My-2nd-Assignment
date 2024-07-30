@@ -40,6 +40,9 @@
     list-style: none;
     margin-right: 70px;
 }
+.vector{
+    display: none;
+}
 nav ul li{
     margin-right: 30px;
 }
@@ -68,6 +71,19 @@ nav ul li{
 .banner-description{
     font-size: 16px;
     font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+.habit-description, 
+.card-title p, 
+.run-content p, 
+.box p, 
+.bmi-form p, 
+.team p, 
+.team-box p, 
+.calculate p, 
+td{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
 }
 .btn-join, 
 .btn-app, 
@@ -95,14 +111,11 @@ nav ul li{
 .box-img{
     width: 350px;
     height: 580px;
-    /* margin-right: 50px; */
     background-image: url(../images/Images\ 2.png);
     background-repeat: no-repeat;
-    /* border: 1px solid greenyellow; */
 }
 .box1, 
 .box2{
-    /* border: 1px solid red; */
     width: 180px;
     height: 96px;
     border-radius: 12px;
@@ -117,10 +130,6 @@ nav ul li{
     align-items: center;
     gap: 15px;
 }
-/* .box1 h3{
-    font-size: 24px;
-    font-weight: 900;
-} */
 .box1-back{
     width: 40px;
     height: 40px;
@@ -142,17 +151,11 @@ nav ul li{
     text-align: center;
 }
 .habit-title, 
-.run-title{
+.run-title, 
+.team h2, 
+.calculate h2{
     font-size: 40px;
     font-weight: 800;
-}
-.habit-description, 
-.card-title p, 
-.run-content p, 
-.box p, 
-.bmi-form p, 
-td{
-    font-size: 14px;
 }
 .habit-card{
     display: flex;
@@ -199,8 +202,8 @@ td{
 
 .bmi{
     width: 1440px;
-    height: 450px;
-    margin-top: 88px;
+    height: 430px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -221,21 +224,18 @@ td{
 }
 .form4 input{
     width: 180px;
+}
+.form4 input, #form5{
     height: 30px;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.1);
     padding: 8px 16px 8px 16px;
     border: none;
-    
+    font-size: 16px;
 }
 #form5{
     width: 400px;
-    height: 30px;
     margin-top: 10px;
-    border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 8px 16px 8px 16px;
-    border: none;
 }
 .btn-bmi{
     margin-top: 10px;
@@ -249,7 +249,43 @@ table{
 td, th{
     border: 1px solid white;
     padding: 5px;
+}
 
+/* team section start */
+
+.team, 
+.calculate{
+    text-align: center;
+    margin-top: 80px;
+}
+.team-bar{
+    width: 1060px;
+    height: 604px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    margin-left: 130px;
+    background-color: rgb(34, 34, 34);
+    padding: 20px;
+    margin-top: 58px;
+}
+.team-box{
+    width: 320px;
+    height: 272px;
+    border-radius: 18px;
+    position: relative;
+}
+.team-box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+}
+.team-box div{
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
 }
 
 /* media quary for mobile */
@@ -260,8 +296,15 @@ td, th{
     .run{
         flex-direction: column;
     }
+    .nav-title{
+        margin-left: 0;
+    }
     .navbar-list{
         display: none;
+    }
+    .vector{
+        display: block;
+        margin-right: 60px;
     }
     .run{
         margin-left: 30px;
@@ -275,5 +318,12 @@ td, th{
         flex-direction: column;
         gap: 50px;
         margin-left: 15px;
+    }
+    .team-bar{
+        grid-template-columns: repeat(1, 1fr);
+        width: 340px;
+        height: 1682px;
+        gap: 10px;
+        margin-left: 30px;
     }
 }

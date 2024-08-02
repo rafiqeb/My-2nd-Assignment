@@ -141,13 +141,15 @@ td{
 .habit{
     margin-top: 100px;
 }
-.habit-content{
+.habit-content,
+.service-title{
     text-align: center;
 }
 .habit-title, 
 .run-title, 
 .team h2, 
-.calculate h2{
+.calculate h2,
+.service-title{
     font-size: 40px;
     font-weight: 800;
 }
@@ -192,6 +194,45 @@ td{
     border-radius: 18px;
 }
 
+/* Service section start */
+
+.service-title{
+    margin-top: 80px;
+}
+.service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.service div{
+    width: 280px;
+    height: 410px;
+    border-radius: 18px;
+    padding: 10px;
+    background-color: rgb(34, 34, 34);
+    border: 2px solid red;
+}
+.service h3{
+    margin-left: 10px;
+}
+.btn-service{
+    width: 150px;
+    height: 45px;
+    border-radius: 42px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgb(34, 34, 34);
+}
+.service img{
+    width: 250px;
+    height: 200px;
+    border-radius: 18px;
+    margin-top: 50px;
+    margin-left: 16px;
+}
+
 /* BMI section start */
 
 .bmi{
@@ -206,7 +247,8 @@ td{
     background-color: rgb(34, 34, 34);
 }
 .bmi-chart h3, 
-.bmi-form h3{
+.bmi-form h3,
+.service h3{
     font-size: 30px;
     font-weight: 900;
 }
@@ -290,6 +332,7 @@ td, th{
     justify-content: center;
     align-items: center;
     margin-top: 80px;
+    border-radius: 18px;
     background-color: rgba(255, 255, 255, 0.1);
 }
 .footer-content{
@@ -333,6 +376,9 @@ td, th{
         height: 700px;
         gap: 50px;
     }
+    .service{
+        flex-direction: column;
+    }
     .bmi{
         width: 450px;
         height: 800px;
@@ -351,7 +397,6 @@ td, th{
         width: 390px;
         height: 700px;
         margin-left: 30px;
-        border-radius: 18px;
     }
     .footer-content{
         flex-direction: column;
